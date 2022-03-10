@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Lógica de Programação JS</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <h1> Lógica de Programação JS</h1>
+
+        <script>
+           //pedir para o usuário digirar um número e mostrar a tabuada desse número de 1 a 1000
+           //repetir até que o "índice" seja <= 1000
+           //Para esta tarefa reescreva o código da aula anterior, mas inserindo uma linha divisória sempre 
+           //que mudar a dezena. Ou seja, entre o 10 e o 11, entre o 20 e o 21 e assim por diante.
+           // Dica: para escrever uma linha horizontal, use a tag <hr>
+
+           var n = prompt("Digite um número para calcular a tabuada");
+           n = parseFloat(n);
+
+           var indice = 0;
+
+           while(indice <= 1000){
+               document.write( n + " x " + indice + " = " + (n * indice) + " <br>");
+
+               if(indice % 10 === 0 && indice > 0) {
+                   document.write("<hr>");
+               }
+              
+               indice = indice + 1
+
+           }
+        </script>
+    </body>
+</html>
