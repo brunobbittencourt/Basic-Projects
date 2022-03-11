@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Lógica de Programação Bronx JS</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <h1> Lógica de Programação Bronx JS</h1>
+
+        <button onclick="mostrarAreaAlert()">mostrar área num alert</button>
+        <button onclick="mostrarAreaOutput()">mostrar area no output</button>
+
+        <div id="output"></div>
+
+    </body>
+   
+        <script>
+    //digitar dois numeros que representam os lados de um retangulo.
+    //mostrar na tela a area total de duas formas distintas: num alert ou na div#output 
+    //(dependendo do botão clicado). Esse código não precisa ser executado quando a página é aberta
+                
+            var largura = prompt("Digite a largura");
+            largura = parseFloat(largura);
+
+            var altura = prompt("Digite a altura");
+            altura = parseFloat(altura);
+
+            function mostrarAreaAlert(){
+                var area = calcularArea(largura,altura);
+
+                alert ("A área total é: " + area);
+            }
+
+            function mostrarAreaOutput(){
+                var area = calcularArea(largura, altura);
+
+                document.querySelector("#output").innerHTML = "A área total é: " + area;
+
+            }
+
+            function calcularArea(l, a){
+                return l * a
+            }
+
+
+
+        </script>
+  
+</html>
