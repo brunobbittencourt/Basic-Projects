@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Lógica de Programação Bronx JS</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <h1> Lógica de Programação Bronx JS</h1>
+
+        <button onclick="somar()">+</button>
+        <button onclick="subtrair()">-</button>
+        <button onclick="multiplicar()">*</button>
+        <button onclick="dividir()">/</button>
+       
+        <div id="output"></div>
+
+        <script>
+        //digitar dois numeros que representam os lados de um retangulo, assim que a pagina
+        //for carregada. 
+        //mostrar o resultado da area total quando clicar num botão
+
+            var n1 = prompt("Digite um número");
+            n1 = parseFloat(n1);
+
+            escreve();
+
+            function escreve(){
+                var output = document.querySelector("#output");
+                output.innerHTML = n1;
+
+            }
+
+            function somar(){
+                var n = prompt("Ditige outro número");
+                n = parseFloat(n);
+                n1 = n1 + n;
+                escreve();
+            }
+
+                function subtrair(){
+                var n = prompt("Ditige outro número");
+                n = parseFloat(n);
+                n1 = n1 - n;
+                escreve();
+                }
+
+                function multiplicar(){
+                var n = prompt("Ditige outro número");
+                n = parseFloat(n);
+                n1 = n1 * n;
+                escreve();
+                }
+
+                function dividir(){
+                var n = prompt("Ditige outro número");
+                n = parseFloat(n);
+                n1 = n1 / n;
+                escreve();
+
+            }
+
+        </script>
+       
+    </body>
+</html>
